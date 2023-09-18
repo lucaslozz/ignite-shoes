@@ -16,7 +16,8 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "ios.bundleIdentifier"
     },
     "android": {
       "adaptiveIcon": {
@@ -29,10 +30,12 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "onesignal-expo-plugin",
-      {
-        "mode": "development"
-      }
+      [
+        "onesignal-expo-plugin",
+        {
+          "mode": "development"
+        }
+      ]
     ]
   }
 }
